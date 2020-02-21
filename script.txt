@@ -1,0 +1,1 @@
+while read in; do aws s3 sync s3://$in ./$in; done < bucket-list-clean.txt
